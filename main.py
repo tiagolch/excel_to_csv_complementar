@@ -5,6 +5,7 @@ from tkinter import filedialog, messagebox
 
 def formatar_numeros(valor):
     if isinstance(valor, str):
+        valor = valor.strip()
         valor = valor.replace('.', '').replace(',', '.')
         try:
             return float(valor)
